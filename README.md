@@ -9,7 +9,7 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
   - [Sales Forecasting](Python/Sales_Forecasting/README.md): Time series forecasting for sales data.
 
 - **SQL**
-  - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/README.md): Analyzing sales data with complex queries and aggregations.
+  - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/Readme.md): Analyzing sales data with complex queries and aggregations.
   - [Insurance In Force Dashboard](SQL/Insurance%20in%20Force%20analysis/README.md): SQL queries for campaign performance.
 
 - **Power BI**
