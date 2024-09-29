@@ -10,7 +10,7 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
 
 - **SQL**
   - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/README.md): Analyzing sales data with complex queries and aggregations.
-  - [Insurance In Force Dashboard](SQL/Insurance in Force analysis/README.md): SQL queries for campaign performance.
+  - [Insurance In Force Dashboard](SQL/Insurance%20in%20Force%20analysis/README.md): SQL queries for campaign performance.
 
 - **Power BI**
   - [Financial Dashboard](PowerBI/Financial_Report/README.md): An interactive financial dashboard showcasing key metrics.
