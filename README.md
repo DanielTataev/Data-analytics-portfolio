@@ -5,7 +5,7 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
 ### 📁 Projects Overview
 
 - **Python**
-  - [IMDB Actors vs Genres ](Python/IMDB20%Actors20%vs20%Genres/README.md): Top actors by gross and genres.
+  - [IMDB Actors vs Genres ](Python/IMDB%20Actors%20vs%20Genres/README.md): Top actors by gross and genres.
 
 - **SQL**
   - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/Readme.md): Analyzing sales data with complex queries and aggregations.
