@@ -5,8 +5,7 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
 ### 📁 Projects Overview
 
 - **Python**
-  - [Customer Segmentation](Python/Customer_Segmentation/README.md): Segmenting customers using clustering algorithms.
-  - [Sales Forecasting](Python/Sales_Forecasting/README.md): Time series forecasting for sales data.
+  - [IMDB Actors vs Genres ](Python/IMDB20%Actors20%vs20%Genres/README.md): Top actors by gross and genres.
 
 - **SQL**
   - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/Readme.md): Analyzing sales data with complex queries and aggregations.
