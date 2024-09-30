@@ -5,7 +5,7 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
 ### 📁 Projects Overview
 
 - **Python**
-  - [Data collection for the Lenders Dashboard](Python/Lender%20Loans%20Dashboard/README.md): Cleaning, transforming, and calculating metrics for Insurance Dashboard.
+  - [Data collection for the Lenders Dashboard](Python/Lender%20Loans%20Dashboard): Cleaning, transforming, and calculating metrics for Insurance Dashboard.
   - [IMDB Actors vs Genres](Python/IMDB%20Actors%20vs%20Genres/README.md): Top actors by gross and genres.
 
 - **SQL**
