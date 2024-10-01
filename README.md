@@ -6,11 +6,11 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
 
 - **Python**
   - [Data collection for the Lenders Dashboard](Python/Lender%20Loans%20Dashboard): Cleaning, transforming, and calculating metrics for Insurance Dashboard.
-  - [IMDB Actors vs Genres](Python/IMDB%20Actors%20vs%20Genres/README.md): Top actors by gross and genres.
+  - [IMDB Actors vs Genres](Python/IMDB%20Actors%20vs%20Genres): Top actors by gross and genres.
 
 - **SQL**
-  - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender/Readme.md): Analyzing sales data with complex queries and aggregations.
-  - [Insurance In Force Dashboard](SQL/Insurance%20in%20Force%20analysis/README.md): SQL queries for campaign performance.
+  - [Insurance Data Analysis Project](SQL/Insurance%20Events%20and%20Comments%20for%20Lender): Analyzing sales data with complex queries and aggregations.
+  - [Insurance In Force Dashboard](SQL/Insurance%20in%20Force%20analysis): SQL queries for campaign performance.
 
 - **Power BI**
   - [Financial Dashboard](PowerBI/Financial_Report/README.md): An interactive financial dashboard showcasing key metrics.
