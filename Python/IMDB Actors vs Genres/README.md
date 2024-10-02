@@ -1,7 +1,9 @@
 # 🎬 Movie Revenue and Actor Analysis
 
-## Project Overview
+## Project Goal
+The project aims to uncover patterns in box office success and identify the key drivers behind high-grossing films.
 
+## Project Overview
 This project analyzes movie data to answer three key questions:
 
 1. **Gross of a Movie vs. Directors**: Which directors are associated with the highest-grossing movies?
