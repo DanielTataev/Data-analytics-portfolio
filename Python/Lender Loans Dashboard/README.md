@@ -1,7 +1,9 @@
 # 😎 Mortgage Insurance Dashboard for Lenders 
 
-## Project Overview
+## Project Goal
+The goal of this project is to create a comprehensive, self-serve dashboard for mortgage insurance lenders in Canada. The dashboard enables lenders to analyze historical trends, predict future developments, and assess risks associated with mortgage insurance applications
 
+## Project Overview
 This project gathers, organizes, transforms, and analyzes data to create a self-serve dashboard for Mortgage Insurance Lenders in Canada.
 The process involved several Python programs and utilized a combination of SQL, Excel, and Python to process and modify the data.
 
