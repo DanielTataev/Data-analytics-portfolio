@@ -1,59 +1,38 @@
-# 🎬 Movie Revenue and Actor Analysis
+# Self-Service Mortgage Insurance Dashboard
 
 ## Project Goal
-The project aims to uncover patterns in box office success and identify the key drivers behind high-grossing films.
+Provide instrument for the lenders and KAMs to use independently for data insights and reporting
 
 ## Project Overview
-This project analyzes movie data to answer three key questions:
+This Power BI project provides a comprehensive self-service tool for Mortgage Insurance Lenders in Canada, offering key insights into business performance over historic periods. The dashboard organizes and analyzes lender data, including borrower information, product performance, and geographical trends. By answering crucial business questions, the dashboard helps lenders make strategic, data-driven decisions to improve portfolio growth and optimize risk management. This project includes processing and analyzing datasets related to mortgage insurance applications and lender performance.
 
-1. **Gross of a Movie vs. Directors**: Which directors are associated with the highest-grossing movies?
-2. **Actor Genre Preference**: Which genre do actors prefer based on the number of movies they appear in?
-3. **Actor Combinations and Gross**: Which combinations of actors are linked to the highest-grossing movies?
+The dashboard is built on the data creation step described here:
 
-The analysis uses Python libraries such as Pandas, Seaborn, and Matplotlib to clean, process, and visualize the data.
+*Disclaimer: The report does not represent any Company, Institution or Country  and uses dummy dataset for demonstration purposes only.*
+  
+---
+
+## Questions Answered
+
+* What is the total insured amount by province for X lender last quarter and how it compares with overall market?
+* Which province is bringing in more clients with higher risk?
+* Which sales reps are following rules the least?
+* What is our borrower profile on average?
 
 ---
 
-## Dataset Description
+## Samples from the dashboard
 
-The dataset contains the following columns:
+I used Power Query to clean and transform the data. Other tools used include; slicers, filters and measures. Leveraging visualization tools, I created charts, graphs, and pivot tables to showcase key Performance metrics.
 
-- **Poster_Link**: URL to the movie's poster.
-- **Series_Title**: Name of the movie.
-- **Released_Year**: Year the movie was released.
-- **Certificate**: Certification of the movie (e.g., PG, R).
-- **Runtime**: Total runtime of the movie.
-- **Genre**: Genre(s) of the movie.
-- **IMDB_Rating**: IMDb rating of the movie.
-- **Overview**: Short summary or plot description.
-- **Meta_score**: Meta score of the movie.
-- **Director**: Name of the director.
-- **Star1, Star2, Star3, Star4**: Names of the stars in the movie.
-- **No_of_votes**: Total number of votes on IMDb.
-- **Gross**: Total gross revenue of the movie.
+**Volumes Overview**
 
----
+![Test](PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG)
 
-## Technologies Used
 
-- **Python**: Core language for the analysis.
-- **Pandas**: For data manipulation and cleaning.
-- **Seaborn** and **Matplotlib**: For data visualization.
-- **Jupyter Notebook**: To document and run the analysis.
+!([PowerBI/Self Serive Insurance Dashboard/Volumes.JPG](https://github.com/DanielTataev/Data-analytics-portfolio/blob/00a0defc9867163747005d3684fd400dda8bdbe6/PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG))
 
----
 
-## Key Insights
-
-### 1. **Gross of a Movie vs. Directors**
-
-This analysis determines which directors are associated with the highest-grossing movies. By grouping the dataset by directors and summing their associated gross revenue, we can identify top-performing directors.
-
-**Example Code**:
-```python
-# Group by Director and calculate total gross
-director_gross = movies.groupby('Director')['Gross'].sum().reset_index()
-director_gross.sort_values(by='Gross', ascending=False).head(10)
 ```
 ### 2. **Actor Genre Preference**
 
@@ -64,23 +43,11 @@ This analysis determines which directors are associated with the highest-grossin
 # Split and explode Genre column to associate multiple genres
 movies['Genre'] = movies['Genre'].str.split(', ')
 movies_genres = movies.explode('Genre')
+```
 
 # Count occurrences for each actor and genre
 actor_genre_count = movies_genres.groupby(['Actor', 'Genre']).size().reset_index(name='Movie_Count')
 preferred_genre = actor_genre_count.loc[actor_genre_count.groupby('Actor')['Movie_Count'].idxmax()]
-```
-### 3. **Actor Combinations and Gross**
-
-The combination of actors that result in high-grossing movies is identified by concatenating actor names and calculating the total gross for each combination.
-
-**Example Code**:
-```python
-# Concatenate actor names and group by combination
-movies['Actor_Combination'] = movies['Star1'] + ', ' + movies['Star2'] + ', ' + movies['Star3'] + ', ' + movies['Star4']
-actor_combination_gross = movies.groupby('Actor_Combination')['Gross'].sum().reset_index()
-actor_combination_gross.sort_values(by='Gross', ascending=False).head(10)
-```
----
 
 ## Conclusion
 This project provides insights into the movie industry by analyzing directors, actor preferences, and actor combinations associated with high-grossing movies. It demonstrates proficiency in data analysis, data visualization, and Python programming.
