@@ -27,7 +27,10 @@ I used Power Query to clean and transform the data. Other tools used include; sl
 
 **Volumes Overview**
 
-LINK
+![Test](PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG)
+
+
+!([PowerBI/Self Serive Insurance Dashboard/Volumes.JPG](https://github.com/DanielTataev/Data-analytics-portfolio/blob/00a0defc9867163747005d3684fd400dda8bdbe6/PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG))
 
 
 ```
@@ -40,6 +43,7 @@ This analysis determines which directors are associated with the highest-grossin
 # Split and explode Genre column to associate multiple genres
 movies['Genre'] = movies['Genre'].str.split(', ')
 movies_genres = movies.explode('Genre')
+```
 
 # Count occurrences for each actor and genre
 actor_genre_count = movies_genres.groupby(['Actor', 'Genre']).size().reset_index(name='Movie_Count')
