@@ -13,7 +13,8 @@ Welcome to my data analytics portfolio! Here, you'll find projects showcasing my
   - [Insurance In Force Dashboard](SQL/Insurance%20in%20Force%20analysis): SQL queries for campaign performance.
 
 - **Power BI**
- to be added...
+  - [Insurance Dashboard](PowerBI/Insurance%20Dashboard): Self Selrivice tool for lenders.
+   
 ---
 
 Check out the individual projects to see the code and reports in action!
