@@ -27,11 +27,7 @@ I used Power Query to clean and transform the data. Other tools used include; sl
 
 **Volumes Overview**
 
-![Test](PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG)
-
-
-!([PowerBI/Self Serive Insurance Dashboard/Volumes.JPG](https://github.com/DanielTataev/Data-analytics-portfolio/blob/00a0defc9867163747005d3684fd400dda8bdbe6/PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG))
-
+![Test](Volumes.png)
 
 ```
 ### 2. **Actor Genre Preference**
