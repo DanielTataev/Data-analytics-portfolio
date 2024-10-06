@@ -25,29 +25,35 @@ The dashboard is built on the data creation step described here:
 
 I used Power Query to clean and transform the data. Other tools used include; slicers, filters and measures. Leveraging visualization tools, I created charts, graphs, and pivot tables to showcase key Performance metrics.
 
+---
+
 **Volumes Overview**
 
-![Test](PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG)
+The Volumes page of the dashboard presents historical volume data and year-over-year (YOY) changes, with slicers available to drill down and filter information to the desired level of detail:
+![](Volumes.png)
 
+**Borrower Profile**
 
-!([PowerBI/Self Serive Insurance Dashboard/Volumes.JPG](https://github.com/DanielTataev/Data-analytics-portfolio/blob/00a0defc9867163747005d3684fd400dda8bdbe6/PowerBI/Self%20Serive%20Insurance%20Dashboard/Volumes.JPG))
+The Borrower page of the dashboard displays data on borrower details and average metric, like Credit score, GDS and TDS:
+![](Borr.png)
 
+**Lender Requested Referrals**
 
-```
-### 2. **Actor Genre Preference**
+The LRR page allows to monitor effectiveness of underwriters and different channels of business:
+![](LLR.png)
 
-This analysis determines which directors are associated with the highest-grossing movies. By grouping the dataset by directors and summing their associated gross revenue, we can identify top-performing directors.
-
-**Example Code**:
-```python
-# Split and explode Genre column to associate multiple genres
-movies['Genre'] = movies['Genre'].str.split(', ')
-movies_genres = movies.explode('Genre')
-```
-
-# Count occurrences for each actor and genre
-actor_genre_count = movies_genres.groupby(['Actor', 'Genre']).size().reset_index(name='Movie_Count')
-preferred_genre = actor_genre_count.loc[actor_genre_count.groupby('Actor')['Movie_Count'].idxmax()]
+---
 
 ## Conclusion
-This project provides insights into the movie industry by analyzing directors, actor preferences, and actor combinations associated with high-grossing movies. It demonstrates proficiency in data analysis, data visualization, and Python programming.
+
+This Power BI project showcases my ability to create interactive and insightful visualizations, helping lenders manage their mortgage insurance portfolios more effectively. By building this comprehensive dashboard, lenders gained critical insights into borrower behavior, geographic trends, and product performance. The ability to drill down into detailed borrower information and track year-over-year (YOY) changes enabled lenders to identify emerging trends and make proactive business decisions.
+
+## Key insights
+
+- Improved Risk Management: The dashboard revealed that certain regions had higher default rates, prompting lenders to adjust their risk assessment models and focus on more tailored insurance offers.
+
+- Product Optimization: By analyzing product performance over time, lenders identified underperforming products and restructured their offerings to better meet customer needs, boosting their portfolio performance.
+
+- Operational Efficiency: The self-service nature of the dashboard allowed different departments to access the information they needed without waiting for ad-hoc reports, leading to quicker decision-making and more efficient operations.
+
+- Borrower Insights: The ability to track borrower profiles and behaviors across different segments helped lenders fine-tune their marketing strategies and target high-value borrowers more effectively.
