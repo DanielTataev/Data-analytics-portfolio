@@ -26,8 +26,10 @@ The dashboard is built on the data creation step described here:
 I used Power Query to clean and transform the data. Other tools used include; slicers, filters and measures. Leveraging visualization tools, I created charts, graphs, and pivot tables to showcase key Performance metrics.
 
 **Volumes Overview**
+Volumes BLA BLA
 
-![Test](Volumes.png)
+![](Volumes.png)
+
 
 ```
 ### 2. **Actor Genre Preference**
@@ -35,11 +37,6 @@ I used Power Query to clean and transform the data. Other tools used include; sl
 This analysis determines which directors are associated with the highest-grossing movies. By grouping the dataset by directors and summing their associated gross revenue, we can identify top-performing directors.
 
 **Example Code**:
-```python
-# Split and explode Genre column to associate multiple genres
-movies['Genre'] = movies['Genre'].str.split(', ')
-movies_genres = movies.explode('Genre')
-```
 
 # Count occurrences for each actor and genre
 actor_genre_count = movies_genres.groupby(['Actor', 'Genre']).size().reset_index(name='Movie_Count')
