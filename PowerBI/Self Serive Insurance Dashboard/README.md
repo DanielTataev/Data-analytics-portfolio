@@ -31,7 +31,7 @@ Volumes BLA BLA
 ![](Volumes.png)
 
 
-```
+
 ### 2. **Actor Genre Preference**
 
 This analysis determines which directors are associated with the highest-grossing movies. By grouping the dataset by directors and summing their associated gross revenue, we can identify top-performing directors.
